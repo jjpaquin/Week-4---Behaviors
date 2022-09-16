@@ -24,6 +24,7 @@ public class MoveObject : MonoBehaviour
         if (distanceTraveled > totalMoveDistance)
         {
             FlipMoveDirection();
+            startingLocation = gameObject.transform.position;
             this.enabled = false;
         }
 
